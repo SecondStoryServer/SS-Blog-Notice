@@ -1,5 +1,5 @@
 function sendNewBlog(){
-  const url = "https://www.ss-rpg.net/";
+  const url = "https://www.ss-rpg.net";
   const BlogCategoryColor = 6316128;
   const html = UrlFetchApp.fetch(url).getContentText("UTF-8");
   const list = Parser.data(html).from("<p class=\"blog-item__text\">").to("</p>").iterate();
